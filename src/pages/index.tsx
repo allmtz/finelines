@@ -27,8 +27,8 @@ export default function Home() {
           content="Discover our local barbershop in Calistoga, your go-to destination for exceptional haircuts and grooming services in the beautiful Napa Valley."
         />
       </Head>
-      <div className="h-screen w-screen flex justify-center items-center">
-        <main className="flex flex-col justify-center items-center gap-4">
+      <div className="h-screen w-screen flex justify-center items-center bg-black min-w-[320px] min-h-[500px]">
+        <main className="flex flex-col justify-center items-center gap-4 text-white">
           <Image src={stamp} height={600} width={600} alt="fine lines logo" />
           <h1 className="text-3xl">
             <span className={playfair.className}>Coming Soon...</span>
@@ -39,7 +39,7 @@ export default function Home() {
               <Image src={email} alt="email" width={30} height={30} />
               <a
                 href="mailto:barbershopfinelines@gmail.com"
-                className="hover:text-orange-600"
+                className="hover:text-hl"
               >
                 barbershopfinelines@gmail.com
               </a>
@@ -47,7 +47,7 @@ export default function Home() {
 
             <div className="flex items-center mt-2 gap-1">
               <Image src={phone} alt="phone" width={30} height={30} />
-              <a href="tel:707-752-7018" className="hover:text-orange-600">
+              <a href="tel:707-752-7018" className="hover:text-hl">
                 707-752-7018
               </a>
 
