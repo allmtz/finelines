@@ -13,7 +13,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 //Landing
 import stamp from "../assets/flstamp.svg";
 
-//About
+//Footer
+import { FiExternalLink } from "react-icons/fi";
 
 export default function Home() {
   return (
@@ -61,7 +62,7 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <Layout>
-        <nav className="flex justify-between items-center w-full p-2">
+        <nav className="flex justify-between items-center w-full p-2 fixed z-20 bg-black">
           <div className="SOCIALS justify-between flex items-center gap-8">
             <BsInstagram size={40}></BsInstagram>
             <BsYelp size={40}></BsYelp>
@@ -75,7 +76,7 @@ export default function Home() {
           <div className="flex flex-col relative w-screen h-screen">
             <div className="LANDING h-full w-full absolute bg-haircut bg-center bg-cover top-0 left-0"></div>
             <div className="SHADE bg-black bg-opacity-50 absolute h-full w-full top-0 left-0"></div>
-            <header className="CONTENT z-10 mt-10 flex flex-col items-center">
+            <header className="CONTENT z-10 mt-32 flex flex-col items-center">
               <Image src={stamp} height={350} width={350} alt=""></Image>
               <button className="py-3 px-9 bg-hl rounded-sm text-black mt-10">
                 Book Now
@@ -109,6 +110,47 @@ export default function Home() {
                 "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Nihil, quas?"
               </p>
+            </div>
+          </section>
+
+          <section className="flex flex-col items-center">
+            <h2>Pick a Professional</h2>
+            <div className="BARBER-CARD text-center">
+              <p>Joe</p>
+              <Image
+                src={"/images/chair.jpg"}
+                height={150}
+                width={150}
+                alt="barber-name"
+              ></Image>
+            </div>
+          </section>
+
+          <section className="flex items-center flex-col p-2">
+            <div className="flex gap-2 text-lg">
+              <div className="flex items-center gap-2">
+                <a href="" className="">
+                  Google Maps
+                </a>
+                <FiExternalLink size={30}></FiExternalLink>
+              </div>{" "}
+              <div className="flex items-center gap-2">
+                <a href="" className="">
+                  Apple Maps
+                </a>
+                <FiExternalLink size={30}></FiExternalLink>
+              </div>
+            </div>
+            <Image
+              src={"/images/shop.jpg"}
+              width={300}
+              height={300}
+              alt=""
+            ></Image>
+            <div className="text-lg text-center">
+              <p>1117 Lincoln Ave Ste C Calistoga CA 94515</p>
+              <p>daniel@flbarber.com</p>
+              <p>707-303-111</p>
             </div>
           </section>
         </main>
