@@ -13,6 +13,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 //Landing
 import stamp from "../assets/flstamp.svg";
 
+//About
+
 export default function Home() {
   return (
     <>
@@ -69,10 +71,10 @@ export default function Home() {
           </div>
           <RxHamburgerMenu size={40}></RxHamburgerMenu>
         </nav>
-        <main>
-          <div className="flex flex-col relative">
-            <div className="LANDING w-screen h-screen absolute bg-haircut bg-center bg-cover top-0 right-0"></div>
-            <div className="SHADE bg-black bg-opacity-50 absolute h-screen w-screen top-0 right-0"></div>
+        <main className="flex flex-col gap-4">
+          <div className="flex flex-col relative w-screen h-screen">
+            <div className="LANDING h-full w-full absolute bg-haircut bg-center bg-cover top-0 left-0"></div>
+            <div className="SHADE bg-black bg-opacity-50 absolute h-full w-full top-0 left-0"></div>
             <header className="CONTENT z-10 mt-10 flex flex-col items-center">
               <Image src={stamp} height={350} width={350} alt=""></Image>
               <button className="py-3 px-9 bg-hl rounded-sm text-black mt-10">
@@ -80,6 +82,35 @@ export default function Home() {
               </button>
             </header>
           </div>
+
+          <section className="h-screen flex flex-col items-center p-2">
+            <h2 className="text-2xl">About us</h2>
+            <Image
+              src={"/images/shop.jpg"}
+              width={300}
+              height={300}
+              alt=""
+            ></Image>
+            <p className="mt-4">
+              Established in Calistoga, Fine Lines Barbershop caters to the
+              people and visitors of Napa Valley, providing quality haircuts at
+              affordable prices. Our skilled barbers deliver professional
+              service and aim to exceed your expectations. Walk-ins are welcome,
+              but appointments are preferred for enhanced service. Thank you for
+              your support! We are grateful to serve our small town and look
+              forward to seeing you soon!
+            </p>
+            <div className="TESTIMONIALS w-full flex mt-4 h-full text-sm text-center">
+              <p>
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+                ab."
+              </p>
+              <p>
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Nihil, quas?"
+              </p>
+            </div>
+          </section>
         </main>
       </Layout>
     </>
