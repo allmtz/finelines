@@ -15,6 +15,11 @@ module.exports = {
       colors: {
         hl: "#ff7356",
       },
+      backgroundImage: {
+        haircut: "url('/images/haircut.jpg')",
+        chair: "url('/images/chair.jpg')",
+        shop: "url('/images/shop.jpg')",
+      },
     },
   },
   plugins: [],
