@@ -1,5 +1,17 @@
 import { ComingSoon } from "@/components/ComingSoon";
+import { Layout } from "@/components/Layout";
 import Head from "next/head";
+
+//Nav
+import Image from "next/image";
+import pole from "../assets/flpole.svg";
+import { BsInstagram } from "react-icons/bs";
+import { BsYelp } from "react-icons/bs";
+import { AiOutlinePhone } from "react-icons/ai";
+import { RxHamburgerMenu } from "react-icons/rx";
+
+//Landing
+import stamp from "../assets/flstamp.svg";
 
 export default function Home() {
   return (
@@ -46,7 +58,30 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <ComingSoon />
+      <Layout>
+        <nav className="flex justify-between items-center w-full p-2">
+          <div className="SOCIALS justify-between flex items-center gap-8">
+            <BsInstagram size={40}></BsInstagram>
+            <BsYelp size={40}></BsYelp>
+            <a href="tel:707-752-7018">
+              <AiOutlinePhone size={40}></AiOutlinePhone>
+            </a>
+          </div>
+          <RxHamburgerMenu size={40}></RxHamburgerMenu>
+        </nav>
+        <main>
+          <div className="flex flex-col relative">
+            <div className="LANDING w-screen h-screen absolute bg-haircut bg-center bg-cover top-0 right-0"></div>
+            <div className="SHADE bg-black bg-opacity-50 absolute h-screen w-screen top-0 right-0"></div>
+            <header className="CONTENT z-10 mt-10 flex flex-col items-center">
+              <Image src={stamp} height={350} width={350} alt=""></Image>
+              <button className="py-3 px-9 bg-hl rounded-sm text-black mt-10">
+                Book Now
+              </button>
+            </header>
+          </div>
+        </main>
+      </Layout>
     </>
   );
 }
