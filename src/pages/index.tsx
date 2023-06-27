@@ -103,12 +103,12 @@ export default function Home() {
             </p>
             <div className="TESTIMONIALS w-full flex mt-4 h-full text-sm text-center">
               <p>
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
-                ab."
+                &quot;Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quis, ab.&quot;
               </p>
               <p>
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Nihil, quas?"
+                &quot;Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Nihil, quas.&quot;
               </p>
             </div>
           </section>
