@@ -9,6 +9,7 @@ import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
 import { About } from "@/components/About";
+import { BarberCard } from "@/components/BarberCard";
 
 export default function Home() {
   return (
@@ -63,18 +64,12 @@ export default function Home() {
             <About />
           </Section>
 
-          <section className="flex flex-col items-center">
-            <h2>Pick a Professional</h2>
-            <div className="BARBER-CARD text-center">
-              <p>Joe</p>
-              <Image
-                src={"/images/chair.jpg"}
-                height={150}
-                width={150}
-                alt="barber-name"
-              ></Image>
-            </div>
-          </section>
+          <Section title="Pick a Professional">
+            <>
+              <BarberCard name="Daniel" imgSrc="" />
+              <BarberCard name="Adrian" imgSrc="" />
+            </>
+          </Section>
 
           <section className="flex items-center flex-col p-2">
             <div className="flex gap-2 text-lg">
