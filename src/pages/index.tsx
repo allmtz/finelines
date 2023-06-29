@@ -60,18 +60,17 @@ export default function Home() {
         <Nav />
         <main className="flex flex-col">
           <Hero />
-          <Section title={"About us"}>
+          <Section title={"About us"} id="about">
             <About />
           </Section>
-
-          <Section title="Pick a Professional">
+          <Section title="Pick a Professional" id="book">
             <>
               <BarberCard name="Daniel" imgSrc="" />
               <BarberCard name="Adrian" imgSrc="" />
             </>
           </Section>
 
-          <section className="flex items-center flex-col p-2">
+          <footer className="flex items-center flex-col p-2">
             <div className="flex gap-2 text-lg">
               <div className="flex items-center gap-2">
                 <a href="" className="">
@@ -97,7 +96,7 @@ export default function Home() {
               <p>daniel@flbarber.com</p>
               <p>707-303-111</p>
             </div>
-          </section>
+          </footer>
         </main>
       </Layout>
     </>

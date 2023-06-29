@@ -7,7 +7,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 export const Nav = () => {
   return (
-    <nav className="flex justify-between items-center w-full p-2 fixed z-20 bg-black">
+    <nav className="flex justify-between items-center w-full p-2  z-20 bg-black">
       <ul className="SOCIALS justify-between flex items-center gap-5">
         <li>
           <a href="https://www.instagram.com/elchinoblends/" target="_blank">

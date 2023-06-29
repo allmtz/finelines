@@ -15,9 +15,9 @@ export const Hero = () => {
             alt="Fine Lines Barbershop"
           ></Image>
         </h1>
-        <button className="py-3 px-9 bg-hl rounded-sm text-black mt-10">
+        <a className="py-3 px-9 bg-hl rounded-sm text-black mt-10" href="#book">
           Book Now
-        </button>
+        </a>
       </header>
     </div>
   );
