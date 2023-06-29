@@ -7,6 +7,8 @@ import Image from "next/image";
 import { FiExternalLink } from "react-icons/fi";
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
+import { Section } from "@/components/Section";
+import { About } from "@/components/About";
 
 export default function Home() {
   return (
@@ -55,37 +57,11 @@ export default function Home() {
       </Head>
       <Layout>
         <Nav />
-        <main className="flex flex-col gap-4">
+        <main className="flex flex-col">
           <Hero />
-
-          <section className="h-screen flex flex-col items-center p-2">
-            <h2 className="text-2xl">About us</h2>
-            <Image
-              src={"/images/shop.jpg"}
-              width={300}
-              height={300}
-              alt=""
-            ></Image>
-            <p className="mt-4">
-              Established in Calistoga, Fine Lines Barbershop caters to the
-              people and visitors of Napa Valley, providing quality haircuts at
-              affordable prices. Our skilled barbers deliver professional
-              service and aim to exceed your expectations. Walk-ins are welcome,
-              but appointments are preferred for enhanced service. Thank you for
-              your support! We are grateful to serve our small town and look
-              forward to seeing you soon!
-            </p>
-            <div className="TESTIMONIALS w-full flex mt-4 h-full text-sm text-center">
-              <p>
-                &quot;Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Quis, ab.&quot;
-              </p>
-              <p>
-                &quot;Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Nihil, quas.&quot;
-              </p>
-            </div>
-          </section>
+          <Section title={"About us"}>
+            <About />
+          </Section>
 
           <section className="flex flex-col items-center">
             <h2>Pick a Professional</h2>
