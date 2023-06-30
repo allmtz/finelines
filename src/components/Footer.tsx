@@ -4,8 +4,8 @@ import { FiExternalLink } from "react-icons/fi";
 
 export const Footer = () => {
   return (
-    <footer className="flex items-center flex-col p-2 gap-4">
-      <div className="flex items-center gap-2 text-lg">
+    <footer className="mt-4 flex items-center flex-col p-2 gap-4 text-zinc-200 bg-gray-800">
+      <div className="mt-4 flex items-center gap-2 text-lg">
         <a
           href="https://maps.google.com/?q=1117+Lincoln+Ave,+Calistoga,+CA+94515"
           target="_blank"

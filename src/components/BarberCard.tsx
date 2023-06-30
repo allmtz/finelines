@@ -28,7 +28,10 @@ export const BarberCard = ({
         {phone ? (
           <div className="bg-black rounded-full p-2">
             <a href={`tel:${phone}`}>
-              <AiOutlinePhone size={30} className="fill-white"></AiOutlinePhone>
+              <AiOutlinePhone
+                size={30}
+                className="fill-zinc-200"
+              ></AiOutlinePhone>
             </a>
           </div>
         ) : (
@@ -37,7 +40,7 @@ export const BarberCard = ({
         {bookLink ? (
           <div className="bg-black rounded-full p-2">
             <a href={`tel:${phone}`}>
-              <BsBook size={30} className="fill-white"></BsBook>
+              <BsBook size={30} className="fill-zinc-100"></BsBook>
             </a>
           </div>
         ) : (

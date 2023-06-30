@@ -55,7 +55,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Nav />
-        <main className="flex flex-col">
+        <main className="flex flex-col gap-6">
           <Hero></Hero>
           <Section title="About us" id="about">
             <About></About>
