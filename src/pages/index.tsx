@@ -62,9 +62,9 @@ export default function Home() {
           </Section>
           <Section title="Pick a Professional" id="book">
             <>
-              <BarberCard name="Daniel" imgSrc="" />
-              <BarberCard name="Adrian" imgSrc="" />
-              <BarberCard name="Elsa" imgSrc="" />
+              <BarberCard name="Daniel" imgSrc="" phone="1" bookLink="a" />
+              <BarberCard name="Adrian" imgSrc="" phone="2" bookLink="b" />
+              <BarberCard name="Elsa" imgSrc="" phone="3" bookLink="c" />
             </>
           </Section>
           <Footer></Footer>
