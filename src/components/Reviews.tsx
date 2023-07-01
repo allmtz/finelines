@@ -37,6 +37,7 @@ export default class FocusOnSelect extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       speed: 500,
+      dots: true,
     };
     return (
       <Slider {...settings}>
@@ -45,7 +46,7 @@ export default class FocusOnSelect extends Component {
             key={idx}
             className="flex flex-col items-center text-center cursor-pointer"
           >
-            <p>"{r!.text}"</p>
+            <p>&quot;{r!.text}&quot;</p>
             <p>- {r!.author}</p>
           </div>
         ))}
