@@ -7,6 +7,7 @@ import { Section } from "@/components/Section";
 import { About } from "@/components/About";
 import { BarberCard } from "@/components/BarberCard";
 import { Footer } from "@/components/Footer";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
   return (
@@ -58,8 +59,11 @@ export default function Home() {
         <main className="flex flex-col gap-6">
           <Hero></Hero>
           <Section title="About us" id="about">
-            <About></About>
+            <>
+              <About></About>
+            </>
           </Section>
+          <Reviews></Reviews>
           <Section title="Pick a Professional" id="book">
             <>
               <BarberCard name="Daniel" imgSrc="" phone="1" bookLink="a" />

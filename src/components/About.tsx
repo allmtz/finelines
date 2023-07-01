@@ -13,16 +13,6 @@ export const About = () => {
         Thank you for your support! We are grateful to serve our small town and
         look forward to seeing you soon!
       </p>
-      <div className="TESTIMONIALS w-full flex mt-4 h-full text-sm text-center">
-        <p>
-          &quot;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
-          ab.&quot;
-        </p>
-        <p>
-          &quot;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
-          quas.&quot;
-        </p>
-      </div>
     </>
   );
 };

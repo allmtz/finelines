@@ -27,3 +27,11 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.center {
+  color: gray;
+}
+
+.slick-current {
+  color: white;
+}
