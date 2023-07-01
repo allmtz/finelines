@@ -1,7 +1,7 @@
 import Image from "next/image";
 import pole from "../assets/flpole.svg";
 import { BsInstagram } from "react-icons/bs";
-import { BsYelp } from "react-icons/bs";
+import { AiFillGoogleCircle } from "react-icons/ai";
 import { AiOutlinePhone } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 
@@ -16,7 +16,7 @@ export const Nav = () => {
         </li>
         <li>
           <a>
-            <BsYelp size={35} className="fill-red-500" />
+            <AiFillGoogleCircle size={35} className="fill-white" />
           </a>
         </li>
         <li>
