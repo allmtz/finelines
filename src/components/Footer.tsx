@@ -2,9 +2,12 @@ import Image from "next/image";
 
 import { FiExternalLink } from "react-icons/fi";
 
-export const Footer = () => {
+export const Footer = ({ id }: { id: string }) => {
   return (
-    <footer className="mt-4 flex items-center flex-col p-2 gap-4 text-zinc-200 bg-gray-800">
+    <footer
+      id={id}
+      className="mt-4 flex items-center flex-col p-2 gap-4 text-zinc-200 bg-gray-800"
+    >
       <div className="mt-4 flex items-center gap-2 text-lg">
         <a
           href="https://maps.google.com/?q=1117+Lincoln+Ave,+Calistoga,+CA+94515"

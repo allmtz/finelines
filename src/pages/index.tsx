@@ -71,7 +71,7 @@ export default function Home() {
               <BarberCard name="Elsa" imgSrc="" phone="3" bookLink="c" />
             </>
           </Section>
-          <Footer></Footer>
+          <Footer id="location"></Footer>
         </main>
       </Layout>
     </>
