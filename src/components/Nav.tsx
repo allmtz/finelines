@@ -42,14 +42,20 @@ export const Nav = ({ id }: { id: string }) => {
       <Drawer anchor={"right"} open={open} onClose={closeModal}>
         <div className="flex flex-col gap-4 p-8 text-xl h-full bg-black text-neutral-200 border-l border-white">
           <div onClick={closeModal}>X</div>
-          <a href="#about" onClick={closeModal}>
+          <a href="/" onClick={closeModal}>
+            Home
+          </a>
+          <a href="/#about" onClick={closeModal}>
             About
           </a>
-          <a href="#book" onClick={closeModal}>
+          <a href="/#book" onClick={closeModal}>
             Book
           </a>
           <a href="#location" onClick={closeModal}>
             Location
+          </a>
+          <a href="/gallery" onClick={closeModal}>
+            Gallery
           </a>
         </div>
       </Drawer>
