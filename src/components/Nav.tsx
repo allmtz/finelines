@@ -8,15 +8,18 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { Drawer } from "@mui/material";
 import { useState } from "react";
 
-export const Nav = () => {
-  const [open, setOpen] = useState(true);
+export const Nav = ({ id }: { id: string }) => {
+  const [open, setOpen] = useState(false);
 
   const closeModal = () => {
     setOpen(false);
   };
 
   return (
-    <nav className="flex justify-between items-center w-full p-2  z-20 bg-black">
+    <nav
+      id={id}
+      className="flex justify-between items-center w-full p-2  z-20 bg-black"
+    >
       <ul className="SOCIALS justify-between flex items-center gap-5">
         <li>
           <a href="https://www.instagram.com/elchinoblends/" target="_blank">

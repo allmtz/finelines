@@ -8,8 +8,28 @@ import { About } from "@/components/About";
 import { BarberCard } from "@/components/BarberCard";
 import { Footer } from "@/components/Footer";
 import Reviews from "@/components/Reviews";
+import { HomeArrow } from "@/components/HomeArrow";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    const home = document.querySelector("#home");
+    const arrow = document.querySelector("#home-arrow");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          arrow!.classList.add("show");
+        } else {
+          arrow!.classList.remove("show");
+        }
+      });
+    });
+
+    const cleanup = observer.observe(home!);
+    return cleanup;
+  }, []);
+
   return (
     <>
       <Head>
@@ -55,13 +75,11 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <Layout>
-        <Nav />
+        <Nav id="home" />
         <main className="flex flex-col gap-6">
           <Hero></Hero>
           <Section title="About us" id="about">
-            <>
-              <About></About>
-            </>
+            <About></About>
           </Section>
           <Reviews></Reviews>
           <Section title="Pick a Professional" id="book">
@@ -73,6 +91,7 @@ export default function Home() {
           </Section>
           <Footer id="location"></Footer>
         </main>
+        <HomeArrow />
       </Layout>
     </>
   );
