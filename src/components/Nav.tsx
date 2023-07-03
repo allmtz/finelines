@@ -28,7 +28,10 @@ export const Nav = ({ id }: { id: string }) => {
           </a>
         </li>
         <li>
-          <a>
+          <a
+            href="https://www.google.com/search?q=fine+lines+calistoga+barber&oq=fine+lines+calistoga+barber&aqs=chrome..69i57j69i64.3999j1j1&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&trex=m_t:lcl_akp,rc_ludocids:4830825983915478730,rc_q:fine%2520lines%2520calistoga%2520barber,ru_gwp:0%252C7,ru_q:fine%2520lines%2520calistoga%2520barber,trex_id:e7RTEc&lpg=cid:CgIgAQ%3D%3D"
+            target="_blank"
+          >
             <AiFillGoogleCircle size={35} className="fill-white" />
           </a>
         </li>
