@@ -10,7 +10,7 @@ export const Section: React.FunctionComponent<{
       id={id ? id : ""}
       className="border border-green-700 min-h-screen flex flex-col items-center p-2 gap-4"
     >
-      <h2 className="text-2xl self-start font-medium border-b border-slate-400">
+      <h2 className="font-heading font-semibold text-2xl self-start border-b border-slate-500">
         {title}
       </h2>
       {children}

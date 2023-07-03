@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -19,6 +20,10 @@ module.exports = {
         haircut: "url('/images/haircut.jpg')",
         chair: "url('/images/chair.jpg')",
         shop: "url('/images/shop.jpg')",
+      },
+      fontFamily: {
+        heading: ["Playfair Display", "serif"],
+        text: ["Quicksand", "sans-serif"],
       },
     },
   },
