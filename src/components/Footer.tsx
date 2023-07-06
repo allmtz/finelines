@@ -6,7 +6,7 @@ export const Footer = ({ id }: { id: string }) => {
   return (
     <footer
       id={id}
-      className="mt-4 flex items-center flex-col p-2 gap-4 text-zinc-200 bg-gray-800"
+      className="mt-4 lg:mt-12 flex items-center flex-col p-2 gap-4 text-zinc-200 bg-gray-800"
     >
       <div className="lg:flex lg:justify-between lg:w-full max-w-[1050px]">
         <div>

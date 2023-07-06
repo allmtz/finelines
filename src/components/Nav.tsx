@@ -21,7 +21,7 @@ export const Nav = ({ id }: { id: string }) => {
   return (
     <nav
       id={id}
-      className="flex justify-between items-center w-full p-2  z-20 bg-black"
+      className="flex justify-between items-center w-full p-2 lg:px-5 z-20 bg-black"
     >
       <Link href="/">
         <Image src={t} width={40} height={40} alt=""></Image>

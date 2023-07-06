@@ -81,7 +81,7 @@ export default function Home() {
 
           <section
             id="about"
-            className="border border-green-700 min-h-screen xl:min-h-0 flex flex-col p-2 gap-4"
+            className="border border-green-700 min-h-screen lg:mt-12 lg:min-h-0 flex flex-col p-2 gap-4"
           >
             <h2 className="font-heading font-semibold text-2xl lg:text-3xl self-start border-b border-slate-500">
               About Us
