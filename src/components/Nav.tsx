@@ -46,24 +46,43 @@ export const Nav = ({ id }: { id: string }) => {
           </a>
         </li>
       </ul>
-      <RxHamburgerMenu size={40} color="white" onClick={() => setOpen(!open)} />
+      <RxHamburgerMenu
+        size={40}
+        color="white"
+        className="cursor-pointer"
+        onClick={() => setOpen(!open)}
+      />
 
       <Drawer anchor={"right"} open={open} onClose={closeModal}>
         <div className="flex flex-col gap-4 p-8 text-xl h-full bg-black text-neutral-200 border-l border-white">
-          <div onClick={closeModal}>X</div>
-          <Link href="/" onClick={closeModal}>
+          <div className="cursor-pointer" onClick={closeModal}>
+            X
+          </div>
+          <Link href="/" className="hover:opacity-80" onClick={closeModal}>
             Home
           </Link>
-          <Link href="/#about" onClick={closeModal}>
+          <Link
+            href="/#about"
+            className="hover:opacity-80"
+            onClick={closeModal}
+          >
             About
           </Link>
-          <Link href="/#book" onClick={closeModal}>
+          <Link href="/#book" className="hover:opacity-80" onClick={closeModal}>
             Book
           </Link>
-          <Link href="#location" onClick={closeModal}>
+          <Link
+            href="#location"
+            className="hover:opacity-80"
+            onClick={closeModal}
+          >
             Location
           </Link>
-          <Link href="/gallery" onClick={closeModal}>
+          <Link
+            href="/gallery"
+            className="hover:opacity-80"
+            onClick={closeModal}
+          >
             Gallery
           </Link>
         </div>

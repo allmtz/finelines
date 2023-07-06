@@ -81,12 +81,12 @@ export default function Home() {
 
           <section
             id="about"
-            className="border border-green-700 min-h-screen lg:mt-12 lg:min-h-0 flex flex-col p-2 gap-4"
+            className="min-h-screen lg:mt-12 lg:min-h-0 flex flex-col p-2 gap-4"
           >
             <h2 className="font-heading font-semibold text-2xl lg:text-3xl self-start border-b border-slate-500">
               About Us
             </h2>
-            <div className="flex flex-col items-center border border-black">
+            <div className="flex flex-col items-center">
               <About></About>
             </div>
             <Reviews></Reviews>

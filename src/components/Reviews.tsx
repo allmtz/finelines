@@ -29,7 +29,7 @@ const reviews = [
 export default class FocusOnSelect extends Component {
   render() {
     const settings = {
-      className: "center mt-2",
+      className: "center mt-2 lg:mt-4",
       focusOnSelect: true,
       centerMode: true,
       // centerPadding: "100px",
