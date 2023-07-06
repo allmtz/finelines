@@ -9,6 +9,8 @@ import { Drawer } from "@mui/material";
 import { useState } from "react";
 import Link from "next/link";
 
+import t from "../assets/flpole.svg";
+
 export const Nav = ({ id }: { id: string }) => {
   const [open, setOpen] = useState(false);
 
@@ -21,6 +23,9 @@ export const Nav = ({ id }: { id: string }) => {
       id={id}
       className="flex justify-between items-center w-full p-2  z-20 bg-black"
     >
+      <Link href="/">
+        <Image src={t} width={40} height={40} alt=""></Image>
+      </Link>
       <ul className="SOCIALS justify-between flex items-center gap-5">
         <li>
           <a href="https://www.instagram.com/elchinoblends/" target="_blank">
