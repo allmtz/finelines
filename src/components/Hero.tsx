@@ -3,7 +3,7 @@ import stamp from "../assets/flstamp.svg";
 
 export const Hero = () => {
   return (
-    <div className="flex flex-col relative w-screen h-screen overflow-hidden">
+    <div className="flex flex-col max-w-[1280px] relative w-screen h-screen overflow-hidden">
       <div className="HERO h-full w-full absolute bg-haircut bg-center bg-cover top-0 left-0"></div>
       <div
         className="SHADE bg-gradient-to-b from-black via-transparent bg-black bg-opacity-50

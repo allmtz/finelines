@@ -78,16 +78,26 @@ export default function Home() {
         <Nav id="home" />
         <main className="flex flex-col gap-6">
           <Hero></Hero>
-          <Section title="About us" id="about">
-            <About></About>
-          </Section>
-          <Reviews></Reviews>
+
+          <section
+            id="about"
+            className="border border-green-700 min-h-screen xl:min-h-0 flex flex-col p-2 gap-4"
+          >
+            <h2 className="font-heading font-semibold text-2xl lg:text-3xl self-start border-b border-slate-500">
+              About Us
+            </h2>
+            <div className="flex flex-col items-center border border-black">
+              <About></About>
+            </div>
+            <Reviews></Reviews>
+          </section>
+
           <Section title="Pick a Professional" id="book">
-            <>
+            <div className="flex flex-col gap-4 md:flex-row md:gap-16">
               <BarberCard name="Daniel" imgSrc="" phone="1" bookLink="a" />
               <BarberCard name="Adrian" imgSrc="" phone="2" bookLink="b" />
               <BarberCard name="Elsa" imgSrc="" phone="3" bookLink="c" />
-            </>
+            </div>
           </Section>
           <Footer id="location"></Footer>
         </main>

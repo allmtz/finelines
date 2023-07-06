@@ -30,7 +30,7 @@ export default function Gallery() {
         <Nav id="home"></Nav>
         <Reviews />
 
-        <div className="GALLERY p-2 grid grid-cols-2 gap-2 grid-rows-auto grid-flow-dense object-contain">
+        <div className="GALLERY p-2 grid grid-cols-2 lg:grid-cols-3 gap-2 grid-rows-auto grid-flow-dense object-contain">
           <div className="relative h-52 border">
             <Image src={"/images/haircut.jpg"} fill alt="" />
           </div>{" "}

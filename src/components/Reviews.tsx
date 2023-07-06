@@ -29,7 +29,7 @@ const reviews = [
 export default class FocusOnSelect extends Component {
   render() {
     const settings = {
-      className: "center",
+      className: "center mt-2",
       focusOnSelect: true,
       centerMode: true,
       // centerPadding: "100px",
@@ -38,13 +38,16 @@ export default class FocusOnSelect extends Component {
       slidesToScroll: 1,
       speed: 500,
       dots: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      // adaptiveHeight: true,
     };
     return (
       <Slider {...settings}>
         {reviews.map((r, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-center text-center cursor-pointer"
+            className="md:text-lg flex flex-col items-center text-center cursor-pointer"
           >
             <p>&quot;{r!.text}&quot;</p>
             <p>- {r!.author}</p>
