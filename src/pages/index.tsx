@@ -5,11 +5,12 @@ import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
 import { About } from "@/components/About";
-import { BarberCard } from "@/components/BarberCard";
 import { Footer } from "@/components/Footer";
 import Reviews from "@/components/Reviews";
 import { HomeArrow } from "@/components/HomeArrow";
 import { useEffect } from "react";
+
+import { Barbers } from "@/components/Barbers";
 
 export default function Home() {
   useEffect(() => {
@@ -94,9 +95,7 @@ export default function Home() {
 
           <Section title="Pick a Professional" id="book">
             <div className="flex flex-col gap-4 md:flex-row md:gap-16">
-              <BarberCard name="Daniel" imgSrc="" phone="1" bookLink="a" />
-              <BarberCard name="Adrian" imgSrc="" phone="2" bookLink="b" />
-              <BarberCard name="Elsa" imgSrc="" phone="3" bookLink="c" />
+              <Barbers />
             </div>
           </Section>
           <Footer id="location"></Footer>

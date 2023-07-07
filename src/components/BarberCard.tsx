@@ -1,19 +1,9 @@
 import Image from "next/image";
-import { StaticImageData } from "next/image";
 import { AiOutlinePhone } from "react-icons/ai";
 import { BsBook } from "react-icons/bs";
+import { Barber } from "./Barbers";
 
-export const BarberCard = ({
-  name,
-  imgSrc,
-  phone,
-  bookLink,
-}: {
-  name: string;
-  imgSrc: string | StaticImageData;
-  phone?: string;
-  bookLink?: string;
-}) => {
+export const BarberCard = ({ name, imgSrc, phone, bookLink }: Barber) => {
   return (
     <div className="BARBER-CARD text-center">
       <h3 className="mt-1 text-xl font-medium">{name}</h3>
