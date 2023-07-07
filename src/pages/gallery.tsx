@@ -44,7 +44,9 @@ export default function Gallery() {
             <Image src={"/images/haircut.jpg"} fill alt="" />
           </div>
         </div>
-        <Footer id="location" />
+        <div>
+          <Footer id="location" />
+        </div>
       </div>
       <HomeArrow />
     </Layout>
