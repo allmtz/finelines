@@ -4,11 +4,11 @@ import { FiExternalLink } from "react-icons/fi";
 
 export const Footer = ({ id }: { id: string }) => {
   return (
-    <footer
-      id={id}
-      className="mt-4 lg:mt-12 flex items-center flex-col p-2 gap-4 text-zinc-200 bg-gray-800"
-    >
-      <div className="lg:flex lg:justify-between lg:w-full max-w-[1050px]">
+    <>
+      <footer
+        id={id}
+        className="mt-4 lg:flex-row lg:justify-evenly  lg:mt-12 flex items-center flex-col p-2 gap-4 text-zinc-200 bg-gray-800"
+      >
         <div>
           <div className="mt-4 flex items-center justify-evenly mb-4 gap-2 text-lg">
             <a
@@ -42,36 +42,33 @@ export const Footer = ({ id }: { id: string }) => {
           </div>
         </div>
 
-        <div className="md:flex md:gap-20 md:mt-4">
-          <section className="mt-4 flex flex-col items-center gap-3">
-            <h3 className="lg:text-xl">Hours</h3>
-            <p>MONDAY: 3:00-5:00</p>
-            <p>MONDAY: 3:00-5:00</p>
-            <p>MONDAY: 3:00-5:00</p>
-            <p>MONDAY: 3:00-5:00</p>
-            <p>MONDAY: 3:00-5:00</p>
-            <p>Closed Sat Sun</p>
-          </section>
+        <section className="mt-4 flex flex-col items-center gap-3">
+          <h3 className="lg:text-xl">Hours</h3>
+          <p>MONDAY: 3:00-5:00</p>
+          <p>MONDAY: 3:00-5:00</p>
+          <p>MONDAY: 3:00-5:00</p>
+          <p>MONDAY: 3:00-5:00</p>
+          <p>MONDAY: 3:00-5:00</p>
+          <p>Closed Sat Sun</p>
+        </section>
 
-          <div>
-            <p className="mt-4 md:mt-0 text-center  lg:text-lg max-w-[400px]">
-              1117 Lincoln Ave, Ste C, Calistoga CA, 94515
-            </p>
-            <Image
-              className="mt-2"
-              src={"/images/shop.jpg"}
-              width={350}
-              height={350}
-              alt=""
-            ></Image>
-          </div>
+        <div>
+          <p className="mt-4 mb-2 md:mt-0 text-center text-lg max-w-[400px]">
+            1117 Lincoln Ave, Ste C, Calistoga CA, 94515
+          </p>
+          <Image
+            className="mt-2"
+            src={"/images/shop.jpg"}
+            width={360}
+            height={350}
+            alt=""
+          ></Image>
         </div>
-      </div>
-
-      <div className="text-center text-lg lg:flex lg:gap-12 lg:mt-10">
+      </footer>
+      <div className="text-center pt-12 pb-2 text-white text-lg lg:flex lg:gap-12 lg:justify-center  bg-gray-800">
         <p>daniel@flbarber.com</p>
         <p className="font-mono">707-303-111</p>
       </div>
-    </footer>
+    </>
   );
 };
