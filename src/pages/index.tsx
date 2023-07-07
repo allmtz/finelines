@@ -94,7 +94,7 @@ export default function Home() {
           </section>
 
           <Section title="Pick a Professional" id="book">
-            <div className="flex flex-col gap-4 md:flex-row md:gap-16">
+            <div className="flex flex-col gap-12 md:flex-row md:gap-16">
               <Barbers />
             </div>
           </Section>
