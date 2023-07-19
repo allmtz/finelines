@@ -54,7 +54,7 @@ export default function Home() {
         <main className="flex flex-col justify-center items-center gap-4 text-white">
           <Image src={stamp} height={600} width={600} alt="fine lines logo" />
           <h1 className="text-3xl mt-4">
-            <span className={playfair.className}>Coming Soon...</span>
+            <span className={playfair.className}>Opening 08/01/2023</span>
           </h1>
 
           <div>
