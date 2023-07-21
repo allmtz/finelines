@@ -44,12 +44,10 @@ export const Footer = ({ id }: { id: string }) => {
 
         <section className="mt-4 flex flex-col items-center gap-3">
           <h3 className="lg:text-xl">Hours</h3>
-          <p>MONDAY: 3:00-5:00</p>
-          <p>MONDAY: 3:00-5:00</p>
-          <p>MONDAY: 3:00-5:00</p>
-          <p>MONDAY: 3:00-5:00</p>
-          <p>MONDAY: 3:00-5:00</p>
-          <p>Closed Sat Sun</p>
+          <p>Tuesday-Saturday: 9:00am - 6:00pm</p>
+          <p className="text-center">
+            Sunday & Monday: Hours may vary,<br></br> please call ahead of time
+          </p>
         </section>
 
         <div>
@@ -66,8 +64,8 @@ export const Footer = ({ id }: { id: string }) => {
         </div>
       </footer>
       <div className="text-center pt-12 pb-2 text-white text-lg lg:flex lg:gap-12 lg:justify-center  bg-gray-800">
-        <p>daniel@flbarber.com</p>
-        <p className="font-mono">707-303-111</p>
+        <p>barbershopfinelines@gmail.com</p>
+        <p className="font-mono">707-737-4700</p>
       </div>
     </>
   );
