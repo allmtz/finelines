@@ -28,7 +28,10 @@ export const Nav = ({ id }: { id: string }) => {
       </Link>
       <ul className="SOCIALS justify-between flex items-center gap-5">
         <li>
-          <a href="https://www.instagram.com/elchinoblends/" target="_blank">
+          <a
+            href="https://www.instagram.com/calistogabarbershop/"
+            target="_blank"
+          >
             <BsInstagram size={35} className="fill-white" />
           </a>
         </li>
@@ -41,7 +44,7 @@ export const Nav = ({ id }: { id: string }) => {
           </a>
         </li>
         <li>
-          <a href="tel:707-752-7018">
+          <a href="tel:707-737-4700">
             <AiOutlinePhone size={35} className="fill-white"></AiOutlinePhone>
           </a>
         </li>
