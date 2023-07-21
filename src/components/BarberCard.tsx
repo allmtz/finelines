@@ -29,7 +29,7 @@ export const BarberCard = ({ name, imgSrc, phone, bookLink }: Barber) => {
         )}{" "}
         {bookLink ? (
           <div className="bg-black rounded-full p-2">
-            <a href={`tel:${phone}`}>
+            <a href={bookLink} target="_blank">
               <BsBook size={30} className="fill-zinc-100"></BsBook>
             </a>
           </div>
