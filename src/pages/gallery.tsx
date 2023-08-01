@@ -6,6 +6,8 @@ import Reviews from "@/components/Reviews";
 import { useEffect } from "react";
 import { HomeArrow } from "@/components/HomeArrow";
 
+const TOTAL_PICS = ["1", "2", "3", "4", "5", "6", "7"];
+
 export default function Gallery() {
   useEffect(() => {
     const home = document.querySelector("#home");
@@ -24,6 +26,7 @@ export default function Gallery() {
     const cleanup = observer.observe(home!);
     return cleanup;
   }, []);
+
   return (
     <Layout>
       <div className="flex flex-col justify-center gap-12">
@@ -31,18 +34,17 @@ export default function Gallery() {
         <Reviews />
 
         <div className="GALLERY p-2 grid grid-cols-2 lg:grid-cols-3 gap-2 grid-rows-auto grid-flow-dense object-contain">
-          <div className="relative h-52 border">
-            <Image src={"/images/haircut.jpg"} fill alt="" />
-          </div>{" "}
-          <div className="relative h-52">
-            <Image src={"/images/haircut.jpg"} fill alt="" />
-          </div>{" "}
-          <div className="relative h-52">
-            <Image src={"/images/haircut.jpg"} fill alt="" />
-          </div>{" "}
-          <div className="relative h-52">
-            <Image src={"/images/haircut.jpg"} fill alt="" />
-          </div>
+          {TOTAL_PICS.map((picNumber, idx) => {
+            return (
+              <Image
+                src={`/gallery/${picNumber}.jpg`}
+                width={500}
+                height={300}
+                alt=""
+                key={idx}
+              />
+            );
+          })}
         </div>
         <div>
           <Footer id="location" />
