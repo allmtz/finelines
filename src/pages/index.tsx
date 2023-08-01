@@ -1,15 +1,36 @@
-import Image from "next/image";
-import { Playfair_Display } from "next/font/google";
+import { ComingSoon } from "@/components/ComingSoon";
 import Head from "next/head";
+import { Layout } from "@/components/Layout";
+import { Nav } from "@/components/Nav";
+import { Hero } from "@/components/Hero";
+import { Section } from "@/components/Section";
+import { About } from "@/components/About";
+import { Footer } from "@/components/Footer";
+import Reviews from "@/components/Reviews";
+import { HomeArrow } from "@/components/HomeArrow";
+import { useEffect } from "react";
 
-import email from "../assets/email.svg";
-import phone from "../assets/phone.svg";
-import location from "../assets/location.svg";
-import stamp from "../assets/flstamp.svg";
-
-const playfair = Playfair_Display({ subsets: ["latin"] });
+import { Barbers } from "@/components/Barbers";
 
 export default function Home() {
+  useEffect(() => {
+    const home = document.querySelector("#home");
+    const arrow = document.querySelector("#home-arrow");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          arrow!.classList.add("show");
+        } else {
+          arrow!.classList.remove("show");
+        }
+      });
+    });
+
+    const cleanup = observer.observe(home!);
+    return cleanup;
+  }, []);
+
   return (
     <>
       <Head>
@@ -31,61 +52,56 @@ export default function Home() {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="/favicon/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/favicon/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/favicon/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link
+          rel="mask-icon"
+          href="/favicon/safari-pinned-tab.svg"
+          color="#5bbad5"
+        />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <div className="h-screen w-screen flex justify-center items-center bg-black min-w-[320px] min-h-[500px]">
-        <main className="flex flex-col justify-center items-center gap-4 text-white">
-          <Image src={stamp} height={600} width={600} alt="fine lines logo" />
-          <h1 className="text-3xl mt-4">
-            <span className={playfair.className}>Opening 08/01/2023</span>
-          </h1>
+      <Layout>
+        <Nav id="home" />
+        <main className="flex flex-col">
+          <Hero></Hero>
 
-          <div>
-            <div className="flex items-center justify-center gap-1">
-              <Image src={email} alt="email" width={30} height={30} />
-              <a
-                href="mailto:barbershopfinelines@gmail.com"
-                className="hover:text-hl"
-              >
-                barbershopfinelines@gmail.com
-              </a>
+          <section
+            id="about"
+            className="min-h-screen lg:mt-12 lg:min-h-0 flex flex-col p-2 gap-4"
+          >
+            <h2 className="font-heading font-semibold text-2xl lg:text-3xl self-start border-b border-slate-500">
+              About Us
+            </h2>
+            <div className="flex flex-col items-center">
+              <About></About>
             </div>
+            <Reviews></Reviews>
+          </section>
 
-            <div className="flex items-center mt-2 gap-1">
-              <Image src={phone} alt="phone" width={30} height={30} />
-              <a href="tel:707-752-7018" className="hover:text-hl">
-                707-752-7018
-              </a>
-
-              <Image
-                src={location}
-                alt="location"
-                width={25}
-                height={25}
-                className="ml-8"
-              />
-              <p>Calistoga, CA</p>
+          <Section title="Pick a Professional" id="book">
+            <div className="flex flex-col gap-12 md:flex-row md:gap-16">
+              <Barbers />
             </div>
-          </div>
+          </Section>
+          <Footer id="location"></Footer>
         </main>
-      </div>
+        <HomeArrow />
+      </Layout>
     </>
   );
 }
