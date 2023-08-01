@@ -7,20 +7,20 @@ import "slick-carousel/slick/slick-theme.css";
 
 const reviews = [
   {
-    text: "Great cuts great service",
-    author: "Mike",
+    text: "Excellent service",
+    author: "Diego",
   },
   {
-    text: "Great atmosphere for family. I take my kids all the time and everyone is always super nice and welcoming",
+    text: "Great atmosphere for family! I take my kids all the time and everyone is always super nice and welcoming",
     author: "Ellie",
   },
   {
-    text: "Will be coming back!",
-    author: "John",
+    text: "Great service, will come back",
+    author: "Izzy",
   },
 
   {
-    text: "The perfect place to stop by and get a haircut. Accommodating, fast and professional ",
+    text: "The perfect place to drop by and get a haircut. Accommodating, fast and professional ",
     author: "Gabe",
   },
   ,
