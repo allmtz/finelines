@@ -10,9 +10,18 @@ export type Barber = {
 };
 
 const barbers: Barber[] = [
-  { name: "Daniel", imgSrc: "", phone: "1", bookLink: "a" },
-  { name: "Adrian", imgSrc: "", phone: "2", bookLink: "b" },
-  { name: "Elsa", imgSrc: "", phone: "3", bookLink: "c" },
+  {
+    name: "Daniel",
+    imgSrc: "/barbers/daniel.jpg",
+    phone: "707-752-7018",
+    bookLink: "https://finelinesbarbershop.as.me/Daniel",
+  },
+  {
+    name: "Adrian",
+    imgSrc: "/barbers/adrian.jpg",
+    phone: "707-327-7592",
+    bookLink: "https://finelinesbarbershop.as.me/Adrian",
+  },
 ];
 
 export const Barbers = () => {
