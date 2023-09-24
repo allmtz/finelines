@@ -56,7 +56,7 @@ export const Footer = ({ id }: { id: string }) => {
           </p>
           <Image
             className="mt-2"
-            src={"/images/shop.jpg"}
+            src={"/images/shop.jpeg"}
             width={360}
             height={350}
             alt=""
