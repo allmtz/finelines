@@ -22,6 +22,12 @@ const barbers: Barber[] = [
     phone: "707-327-7592",
     bookLink: "https://finelinesbarbershop.as.me/Adrian",
   },
+  {
+    name: "Jorge",
+    imgSrc: "/images/chair.jpg",
+    phone: "707-312-3453",
+    bookLink: "https://finelinesbarbershop.as.me/?calendarID=8931157",
+  },
 ];
 
 export const Barbers = () => {
