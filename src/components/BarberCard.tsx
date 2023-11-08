@@ -9,16 +9,17 @@ export const BarberCard = ({ name, imgSrc, phone, bookLink }: Barber) => {
     <div className="BARBER-CARD text-center">
       <h3 className="mt-1 text-xl font-medium">{name}</h3>
       <Link href={bookLink ? bookLink : ""} target="_blank">
-        <Image
-          src={imgSrc}
-          className="mt-2 rounded-md"
-          height={150}
-          width={150}
-          alt={""}
-        ></Image>{" "}
+        <div className="relative h-36 w-36">
+          <Image
+            src={imgSrc}
+            className="object-cover mt-2 rounded-md"
+            fill
+            alt={""}
+          ></Image>{" "}
+        </div>
       </Link>
 
-      <div className="flex items-center justify-center gap-4 mt-2">
+      <div className="flex items-center justify-center gap-4 mt-4">
         {phone ? (
           <div className="bg-black rounded-full p-2">
             <a href={`tel:${phone}`}>
