@@ -32,7 +32,7 @@ const barbers: Barber[] = [
 
 export const Barbers = () => {
   return (
-    <>
+    <div className="flex gap-8 flex-wrap">
       {barbers.map((ba, idx) => (
         <motion.div
           initial={{ opacity: 0 }}
@@ -52,6 +52,6 @@ export const Barbers = () => {
           />
         </motion.div>
       ))}
-    </>
+    </div>
   );
 };
