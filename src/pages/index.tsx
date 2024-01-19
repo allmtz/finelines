@@ -48,6 +48,13 @@ export default function Home() {
           content="Discover our local barbershop in Calistoga, your go-to destination for exceptional haircuts and grooming services in the beautiful Napa Valley."
         />
 
+        {/* umami */}
+        <script
+          defer
+          src="https://us.umami.is/script.js"
+          data-website-id="8e1b2318-cd20-4eec-9c09-6d94819139f4"
+        ></script>
+
         {/* favicon */}
         <link
           rel="apple-touch-icon"
