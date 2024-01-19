@@ -30,6 +30,7 @@ export const Hero = () => {
         <a
           className="font-semibold py-3 px-9 bg-hl rounded-sm text-black mt-10"
           href="#book"
+          data-umami-event="Book now button"
         >
           Book Now
         </a>
