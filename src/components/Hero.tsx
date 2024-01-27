@@ -6,7 +6,7 @@ export const Hero = () => {
     <div className="flex flex-col max-w-[1440px] relative w-screen h-screen overflow-hidden">
       <div className="HERO h-full w-full absolute">
         <Image
-          src={"/images/haircut.jpg"}
+          src={"/images/haircut.webp"}
           alt="Fine Lines Barbershop"
           className="object-cover"
           placeholder="empty"

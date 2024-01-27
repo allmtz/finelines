@@ -59,7 +59,7 @@ export const Footer = ({ id }: { id: string }) => {
           </p>
           <Image
             className="mt-2"
-            src={"/images/shop.jpeg"}
+            src={"/images/shop.webp"}
             width={360}
             height={350}
             alt=""
