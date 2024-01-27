@@ -1,5 +1,6 @@
 import { ComingSoon } from "@/components/ComingSoon";
 import Head from "next/head";
+import Script from "next/script";
 import { Layout } from "@/components/Layout";
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
@@ -48,13 +49,6 @@ export default function Home() {
           content="Discover our local barbershop in Calistoga, your go-to destination for exceptional haircuts and grooming services in the beautiful Napa Valley."
         />
 
-        {/* umami */}
-        <script
-          defer
-          src="https://us.umami.is/script.js"
-          data-website-id="8e1b2318-cd20-4eec-9c09-6d94819139f4"
-        ></script>
-
         {/* favicon */}
         <link
           rel="apple-touch-icon"
@@ -82,6 +76,14 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
+
+      {/* umami */}
+      <Script
+        src="https://us.umami.is/script.js"
+        defer
+        data-website-id="8e1b2318-cd20-4eec-9c09-6d94819139f4"
+      />
+
       <Layout>
         <Nav id="home" />
         <main className="flex flex-col">
