@@ -8,7 +8,11 @@ export const BarberCard = ({ name, imgSrc, phone, bookLink }: Barber) => {
   return (
     <div className="BARBER-CARD text-center">
       <h3 className="mt-1 text-xl font-medium">{name}</h3>
-      <Link href={bookLink ? bookLink : ""} target="_blank">
+      <Link
+        href={bookLink ? bookLink : ""}
+        aria-label={`Book ${name}`}
+        target="_blank"
+      >
         <div className="relative h-36 w-36">
           <Image
             src={imgSrc}
@@ -22,7 +26,11 @@ export const BarberCard = ({ name, imgSrc, phone, bookLink }: Barber) => {
       <div className="flex items-center justify-center gap-4 mt-4">
         {phone ? (
           <div className="bg-black rounded-full p-2">
-            <a href={`tel:${phone}`} data-umami-event={`Call button: ${name}`}>
+            <a
+              href={`tel:${phone}`}
+              aria-label={`Call ${name}`}
+              data-umami-event={`Call button: ${name}`}
+            >
               <AiOutlinePhone
                 size={30}
                 className="fill-zinc-200"
@@ -36,6 +44,7 @@ export const BarberCard = ({ name, imgSrc, phone, bookLink }: Barber) => {
           <div className="bg-black rounded-full p-2">
             <a
               href={bookLink}
+              aria-label={`Book ${name}`}
               target="_blank"
               data-umami-event={`Book button: ${name}`}
             >

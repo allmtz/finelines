@@ -13,6 +13,7 @@ export const Footer = ({ id }: { id: string }) => {
           <div className="mt-4 flex items-center justify-evenly mb-4 gap-2 text-lg">
             <a
               href="https://maps.google.com/?q=1117+Lincoln+Ave,+Calistoga,+CA+94515"
+              aria-label="Open directions in Google Maps"
               target="_blank"
               className="flex items-center gap-1 lg:text-xl"
             >
@@ -21,6 +22,7 @@ export const Footer = ({ id }: { id: string }) => {
             </a>
             <a
               href="https://maps.apple.com/maps?q=1117+Lincoln+Ave,+Calistoga,+CA+94515"
+              aria-label="Open directions in Apple Maps"
               className="flex items-center gap-1 lg:text-xl"
               target="_blank"
             >
@@ -34,6 +36,7 @@ export const Footer = ({ id }: { id: string }) => {
               height="100%"
               style={{ border: 0 }}
               loading="lazy"
+              title="Google Maps Embed"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDPjBaGut2XWcj7qmpsJM0QzTU6QxvBDYQ

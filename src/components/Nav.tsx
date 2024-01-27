@@ -23,13 +23,14 @@ export const Nav = ({ id }: { id: string }) => {
       id={id}
       className="flex justify-between items-center w-full p-2 lg:px-5 z-20 bg-black"
     >
-      <Link href="/">
+      <Link href="/" aria-label="Home">
         <Image src={t} width={40} height={40} alt=""></Image>
       </Link>
       <ul className="SOCIALS justify-between flex items-center gap-5">
         <li>
           <a
             href="https://www.instagram.com/calistogabarbershop/"
+            aria-label="Instagram"
             target="_blank"
           >
             <BsInstagram size={35} className="fill-white" />
@@ -38,13 +39,14 @@ export const Nav = ({ id }: { id: string }) => {
         <li>
           <a
             href="https://www.google.com/search?q=fine+lines+calistoga+barber&oq=fine+lines+calistoga+barber&aqs=chrome..69i57j69i64.3999j1j1&sourceid=chrome&ie=UTF-8#lkt=LocalPoiReviews&trex=m_t:lcl_akp,rc_ludocids:4830825983915478730,rc_q:fine%2520lines%2520calistoga%2520barber,ru_gwp:0%252C7,ru_q:fine%2520lines%2520calistoga%2520barber,trex_id:e7RTEc&lpg=cid:CgIgAQ%3D%3D"
+            aria-label="Goolge Reviews"
             target="_blank"
           >
             <AiFillGoogleCircle size={35} className="fill-white" />
           </a>
         </li>
         <li>
-          <a href="tel:707-737-4700">
+          <a href="tel:707-737-4700" aria-label="Call the barbershop">
             <AiOutlinePhone size={35} className="fill-white"></AiOutlinePhone>
           </a>
         </li>
@@ -66,16 +68,23 @@ export const Nav = ({ id }: { id: string }) => {
           </Link>
           <Link
             href="/#about"
+            aria-label="About"
             className="hover:opacity-80"
             onClick={closeModal}
           >
             About
           </Link>
-          <Link href="/#book" className="hover:opacity-80" onClick={closeModal}>
+          <Link
+            href="/#book"
+            aria-label="Book"
+            className="hover:opacity-80"
+            onClick={closeModal}
+          >
             Book
           </Link>
           <Link
             href="#location"
+            aria-label="Location"
             className="hover:opacity-80"
             onClick={closeModal}
           >
@@ -83,6 +92,7 @@ export const Nav = ({ id }: { id: string }) => {
           </Link>
           <Link
             href="/gallery"
+            aria-label="Gallery"
             className="hover:opacity-80"
             onClick={closeModal}
           >
