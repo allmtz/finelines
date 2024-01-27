@@ -12,19 +12,19 @@ export type Barber = {
 const barbers: Barber[] = [
   {
     name: "Daniel",
-    imgSrc: "/barbers/daniel.jpg",
+    imgSrc: "/barbers/daniel.webp",
     phone: "707-752-7018",
     bookLink: "https://finelinesbarbershop.as.me/Daniel",
   },
   {
     name: "Adrian",
-    imgSrc: "/barbers/adrian.jpg",
+    imgSrc: "/barbers/adrian.webp",
     phone: "707-327-7592",
     bookLink: "https://finelinesbarbershop.as.me/Adrian",
   },
   {
     name: "Jorge",
-    imgSrc: "/barbers/jorge.jpeg",
+    imgSrc: "/barbers/jorge.webp",
     phone: "707-312-3453",
     bookLink: "https://finelinesbarbershop.as.me/?calendarID=8931157",
   },
