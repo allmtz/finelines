@@ -3,7 +3,7 @@ import stamp from "../assets/flstamp.svg";
 
 export const Hero = () => {
   return (
-    <div className="flex flex-col max-w-[1440px] relative w-screen h-screen overflow-hidden">
+    <div className="flex flex-col max-w-[1440px] relative min-h-screen min-w-screen overflow-hidden">
       <div className="HERO h-full w-full absolute">
         <Image
           src={"/images/haircut.webp"}
