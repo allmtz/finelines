@@ -6,7 +6,20 @@ import Reviews from "@/components/Reviews";
 import { useEffect } from "react";
 import { HomeArrow } from "@/components/HomeArrow";
 
-const TOTAL_PICS = ["1", "2", "3", "4", "5", "6", "7"];
+const PIC_ORDER = [
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "1",
+  "2",
+  "4",
+  "5",
+  "6",
+  "7",
+];
 
 export default function Gallery() {
   useEffect(() => {
@@ -33,13 +46,13 @@ export default function Gallery() {
         <Nav id="home"></Nav>
         <Reviews />
 
-        <div className="GALLERY p-2 grid grid-cols-2 lg:grid-cols-3 gap-2 grid-rows-auto grid-flow-dense object-contain">
-          {TOTAL_PICS.map((picNumber, idx) => {
+        <div className="GALLERY p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 grid-rows-auto grid-flow-dense object-contain">
+          {PIC_ORDER.map((picNumber, idx) => {
             return (
               <Image
-                src={`/gallery/${picNumber}.jpg`}
+                src={`/gallery/${picNumber}.webp`}
                 width={500}
-                height={300}
+                height={200}
                 alt=""
                 key={idx}
               />
