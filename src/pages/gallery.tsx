@@ -6,20 +6,7 @@ import Reviews from "@/components/Reviews";
 import { useEffect } from "react";
 import { HomeArrow } from "@/components/HomeArrow";
 
-const PIC_ORDER = [
-  "8",
-  "9",
-  "10",
-  "11",
-  "12",
-  "13",
-  "1",
-  "2",
-  "4",
-  "5",
-  "6",
-  "7",
-];
+const PIC_ORDER = ["8", "9", "10", "11", "12", "13"];
 
 export default function Gallery() {
   useEffect(() => {
