@@ -66,9 +66,20 @@ export const Footer = ({ id }: { id: string }) => {
           ></Image>
         </div>
       </footer>
-      <div className="text-center pt-12 pb-2 text-white text-lg lg:flex lg:gap-12 lg:justify-center  bg-gray-800">
+      <div className="text-center pt-12 text-white text-lg lg:flex lg:gap-12 lg:justify-center bg-gray-800">
         <p>barbershopfinelines@gmail.com</p>
         <p className="font-mono">707-737-4700</p>
+      </div>
+
+      <div className="text-center pt-4 pb-2 text-white text-sm bg-gray-800">
+        Website by:{" "}
+        <a
+          href="https://allanmartinez.me/"
+          target="_blank"
+          className="hover:text-blue-500"
+        >
+          Allan Martinez
+        </a>
       </div>
     </>
   );
