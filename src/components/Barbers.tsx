@@ -30,7 +30,7 @@ const barbers: Barber[] = [
   },
   {
     name: "Hector Arceo",
-    imgSrc: "/barbers/hector.jpg",
+    imgSrc: "/barbers/hector.webp",
     phone: "707-304-3629",
     bookLink: "https://finelinesbarbershop.as.me/Hector",
   },
