@@ -74,7 +74,7 @@ export const Footer = ({ id }: { id: string }) => {
       <div className="text-center pt-4 pb-2 text-white text-sm bg-gray-800">
         Website by:{" "}
         <a
-          href="https://allanmartinez.me/"
+          href="https://allanmartinez.com/"
           target="_blank"
           className="hover:text-blue-500"
         >
