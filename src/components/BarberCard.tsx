@@ -18,6 +18,7 @@ export const BarberCard = ({ name, imgSrc, phone, bookLink }: Barber) => {
             src={imgSrc}
             className="object-cover mt-2 rounded-md"
             fill
+            sizes="30vw"
             alt={""}
           ></Image>{" "}
         </div>
