@@ -12,7 +12,7 @@ export type Barber = {
 const barbers: Barber[] = [
   {
     name: "Jesus",
-    imgSrc: "",
+    imgSrc: "/barbers/default.webp",
     phone: "707-396-0407",
     bookLink:
       "https://booksy.com/en-us/instant-experiences/widget/1433231?instant_experiences_enabled=true&ig_ix=true",
